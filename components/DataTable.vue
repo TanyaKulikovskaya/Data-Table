@@ -33,12 +33,12 @@ export default {
     data() {
         return {
             fields: [
-                { key: 'unit', label: 'Агрегат' },
-                { key: 'date', label: 'Дата' },
-                { key: 'start', label: 'Начало' },
-                { key: 'length', label: 'Длительность, мин.' },
-                { key: 'idle', label: 'Простой' },
-                { key: 'type', label: 'Тип' },
+                { key: 'unit', label: 'Агрегат', tdClass: 'align-middle' },
+                { key: 'date', label: 'Дата', tdClass: 'align-middle'},
+                { key: 'start', label: 'Начало', tdClass: 'align-middle' },
+                { key: 'length', label: 'Длительность, мин.', tdClass: 'align-middle' },
+                { key: 'idle', label: 'Простой', tdClass: 'align-middle' },
+                { key: 'type', label: 'Тип', tdClass: 'align-middle' },
             ]
         }
     },
