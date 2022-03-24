@@ -1,5 +1,5 @@
 <template>
-  <b-card border-variant="light" class="shadow-sm">
+  <b-card border-variant="light" class="shadow-sm mb-2">
     <b-card-sub-title class="mb-4">
       Сводная таблица
     </b-card-sub-title>
@@ -21,26 +21,26 @@
 
 <script>
 export default {
-    name: 'DataTable',
-    props: {
-        items: {
-            type: Array,
-            default() {
-                return []
-            }
-        }
-    },
-    data() {
-        return {
-            fields: [
-                { key: 'unit', label: 'Агрегат', tdClass: 'align-middle' },
-                { key: 'date', label: 'Дата', tdClass: 'align-middle'},
-                { key: 'start', label: 'Начало', tdClass: 'align-middle' },
-                { key: 'length', label: 'Длительность, мин.', tdClass: 'align-middle' },
-                { key: 'idle', label: 'Простой', tdClass: 'align-middle' },
-                { key: 'type', label: 'Тип', tdClass: 'align-middle' },
-            ]
-        }
-    },
+  name: 'DataTable',
+  props: {
+    items: {
+      type: Array,
+      default() {
+        return []
+      }
+    }
+  },
+  data() {
+    return {
+      fields: [
+        { key: 'unit', label: 'Агрегат', tdClass: 'align-middle' },
+        { key: 'date', label: 'Дата', tdClass: 'align-middle'},
+        { key: 'start', label: 'Начало', tdClass: 'align-middle' },
+        { key: 'length', label: 'Длительность, мин.', tdClass: 'align-middle' },
+        { key: 'idle', label: 'Простой', tdClass: 'align-middle' },
+        { key: 'type', label: 'Тип', tdClass: 'align-middle' },
+      ]
+    }
+  },
 }
 </script>

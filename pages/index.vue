@@ -58,6 +58,7 @@
       </b-col>
     </b-row>
     <data-table :items="currentTask.details"/>
+    <data-chart :graph="currentTask.graph" />
   </b-container>
 </template>
 
